@@ -1,16 +1,16 @@
 <?php
  
 use App\Http\Controllers\PrincipalController;
+use App\Http\Controllers\CursosController;
+use App\Http\Controllers\OportunidadesController;
+use App\Http\Controllers\VestibulinhoController;
 use App\Http\Controllers\ContatoController;
-use App\Http\Controllers\SobrenosController;
-use App\Http\Controllers\BlogController;
-use App\Http\Controllers\ServicosController;
 use Illuminate\Support\Facades\Route;
  
  
 Route::get('/', [PrincipalController::class, 'principal'])->name('site.index');
  
-Route::get('/sobrenos', [SobrenosController::class, 'sobrenos'])->name('site.sobrenos');
-Route::get('/contato', [ContatoController::class, 'contato'])->name('site.contato');
-Route::get('/blog', [BlogController::class, 'blog'])->name('site.blog');
-Route::get('/servicos',[ServicosController::class, 'servicos'])->name('site.servicos');
+Route::get('/sobrenos', [CursosController::class, 'sobrenos'])->name('site.cursos');
+Route::get('/contato', [OportunidadesController::class, 'contato'])->name('site.oportunidades');
+Route::get('/blog', [VestibulinhoController::class, 'blog'])->name('site.vestibulinho');
+Route::get('/servicos',[ContatoController::class, 'servicos'])->name('site.contato');
