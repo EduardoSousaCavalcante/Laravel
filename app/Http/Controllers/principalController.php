@@ -10,19 +10,19 @@ class PrincipalController extends Controller
         return view('site.principal');
     }
 
-    public function sobrenos() {
-        return view('site.sobrenos');
+    public function cursos() {
+        return view('site.cursos');
+    }
+
+    public function oportuidades() {
+        return view('site.oportuidades');
+    }
+
+    public function vestibulinho() {
+        return view('site.vestibulinho');
     }
 
     public function contato() {
         return view('site.contato');
-    }
-
-    public function blog() {
-        return view('site.blog');
-    }
-
-    public function servicos() {
-        return view('site.servicos');
     }
 }
